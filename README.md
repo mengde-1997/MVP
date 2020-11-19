@@ -6,18 +6,18 @@ There are a huge number of ***Matrix-Vector Multiplication***  operations in dee
 Both activation and weight are quantified into **4 bit** (the MSB is the signal bit) with Learned step-size qunatization(LSQ) algorithm.
 
 A bit serial method is adopted to complete the MAC operation and it can greatly reduce power consumption compared to tradtional method.
-![architecture](./Picture/pic_1.jpg)
+![architecture](./picture/pic_1.jpg)
 # Architecture
-![architecture](./Picture/pic_2.jpg)
+![architecture](./picture/pic_2.jpg)
 Note that DMA is used to move weigth and activation.
 Of course you can also use .coe to load the data into BRAM.
  
 # Block Design 
-![architecture](./Picture/pic_3.jpg)
+![architecture](./picture/pic_3.jpg)
 
 # Software Implementation  
-![software](./Picture/pic_5.jpg)      
-More at  [Python Code](./Notebook/mvp.py)    
+![software](./picture/pic_5.jpg)      
+More at  [Python Code](./notebook/mvp.py)    
 
 # Acknowledgment 
 
