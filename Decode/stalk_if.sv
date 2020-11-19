@@ -39,6 +39,7 @@ module stalk_if #(
     
     logic [31:0] reg_data_out;
     logic [3:0] sif_rdata_mux;
+    
     always_ff @(posedge clk or negedge rstn) begin
         if (~ rstn)       sif_rdata_mux <= '0;
         else if (sif_ren) sif_rdata_mux <= sif_addr[SIF_AW-1-:4];
@@ -55,8 +56,6 @@ module stalk_if #(
         endcase
     end
     
-
-   
     assign buf_a_addr  = sif_addr[MEM_AW-1:0];
     assign buf_a_wen   = sif_wen && sif_addr[SIF_AW-1-:4] == 4'b0010;
     assign buf_a_wdata = sif_wdata[31:0];
