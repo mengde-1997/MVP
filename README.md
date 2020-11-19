@@ -17,7 +17,7 @@ Of course you can also use .coe to load the data into BRAM.
 
 # Software Implementation  
 ![software](./picture/pic_5.jpg)      
-More at  [Python Code](./notebook/mvp.py)    
+More at *./notebook/mvp.py*  
 
 # Acknowledgment 
 
